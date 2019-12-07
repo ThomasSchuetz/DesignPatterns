@@ -11,8 +11,10 @@ The state pattern allows an object to alter its behavior when its internal state
 
 ## Class diagram
 
+![State pattern class diagram](https://upload.wikimedia.org/wikipedia/commons/e/ec/W3sDesign_State_Design_Pattern_UML.jpg "State pattern class diagram")
+
 ## Example
 
 A simple example application is a turnstile. It can either be locked or unlocked. If it is locked, you may insert money (coins) until a certain amount has been reached.
 
-https://en.wikipedia.org/wiki/File:Turnstile_state_machine_colored.svg
+![Turnstile activity diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Turnstile_state_machine_colored.svg/790px-Turnstile_state_machine_colored.svg.png "Turnstile activity diagram")
