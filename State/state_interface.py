@@ -6,6 +6,7 @@ class StateInterface(ABC):
     
     def __init__(self, turnstile):
         self._turnstile = turnstile
+        self._turnstile.reset_amount()
     
     @abstractmethod
     def get_current_state(self):

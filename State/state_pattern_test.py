@@ -50,6 +50,15 @@ class TestTurnstileEvents(unittest.TestCase):
         turnstile.push()
         self.assertEqual(turnstile.current_state(), "locked")
     
+    def test_amount_in_turnstile_is_reset_after_unlocking(self):
+        turnstile = Turnstile(amount_for_passing=10)
+        turnstile.insert_coin(15)
+        self.assertEqual(turnstile.current_amount(), 0)
+    
+    def test_amount_increases_when_inserting_coin(self):
+        turnstile = Turnstile(amount_for_passing=10)
+        turnstile.insert_coin(5)
+        self.assertEqual(turnstile.current_amount(), 5)
 
 if __name__ == '__main__':
     unittest.main()
