@@ -29,3 +29,6 @@ class Turnstile(object):
 
     def change_state(self, new_state):
         self.state = new_state
+    
+    def reset_amount(self):
+        self._current_amount = 0
