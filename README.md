@@ -1,5 +1,7 @@
 # DesignPatterns
 
+[![Build Status](https://travis-ci.com/ThomasSchuetz/DesignPatterns.svg?branch=master)](https://travis-ci.com/ThomasSchuetz/DesignPatterns)
+
 ## Objective
 
 This repository presents an overview of different [design patterns](https://en.wikipedia.org/wiki/Software_design_pattern#Classification_and_list).
